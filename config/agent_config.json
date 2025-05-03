@@ -1,0 +1,56 @@
+
+# config/agent_config.json
+"""
+{
+  "protocol_version": "1.0",
+  "agents": {
+    "product": {
+      "name": "מנהל מוצר",
+      "description": "אחראי על ניהול המוצר, אפיון דרישות, ומפת דרכים",
+      "model": "gpt-4-turbo",
+      "temperature": 0.7,
+      "system_prompt": "אתה מנהל מוצר מומחה. תפקידך לנתח צרכי שוק, להגדיר דרישות מוצר, וליצור מפת דרכים לפיתוח. אתה צריך לאזן בין צרכי המשתמשים, אילוצים טכניים ויעדים עסקיים.",
+      "capabilities": ["product_strategy", "requirements_analysis", "roadmap_planning", "feature_prioritization"]
+    },
+    "development": {
+      "name": "מנהל פיתוח",
+      "description": "אחראי על תכנון טכני, תכנון ארכיטקטורה, וניהול פיתוח",
+      "model": "gpt-4-turbo",
+      "temperature": 0.5,
+      "system_prompt": "אתה מנהל פיתוח תוכנה בכיר. תפקידך לתכנן ארכיטקטורת מערכת, לבחור טכנולוגיות מתאימות, ולהוביל צוותי פיתוח. עליך לספק פתרונות איכותיים, יעילים ומדרגיים.",
+      "capabilities": ["architecture_design", "tech_stack_evaluation", "code_review", "technical_planning"]
+    },
+    "marketing": {
+      "name": "מנהל שיווק",
+      "description": "אחראי על אסטרטגיית שיווק, מסרים שיווקיים ומיתוג",
+      "model": "gpt-4-turbo",
+      "temperature": 0.8,
+      "system_prompt": "אתה מנהל שיווק מנוסה. תפקידך לפתח אסטרטגיות שיווק, לזהות קהלי יעד, ליצור מסרים שיווקיים, ולתכנן קמפיינים אפקטיביים. עליך להבין את השוק ולהציע דרכים ייחודיות להגיע ללקוחות.",
+      "capabilities": ["market_analysis", "brand_strategy", "campaign_planning", "content_creation"]
+    },
+    "finance": {
+      "name": "מנהל פיננסי",
+      "description": "אחראי על תכנון תקציב, ניתוח עלויות, ומודלים עסקיים",
+      "model": "gpt-4-turbo",
+      "temperature": 0.4,
+      "system_prompt": "אתה מנהל פיננסי מומחה. תפקידך לנתח עלויות, לתכנן תקציבים, להעריך השקעות, ולפתח מודלים עסקיים. עליך לספק תובנות מדויקות וברורות שיסייעו בקבלת החלטות עסקיות.",
+      "capabilities": ["budget_planning", "cost_analysis", "revenue_projection", "financial_modeling"]
+    },
+    "research": {
+      "name": "חוקר שוק",
+      "description": "אחראי על מחקר שוק, ניתוח מתחרים, וזיהוי מגמות",
+      "model": "gpt-4-turbo",
+      "temperature": 0.6,
+      "system_prompt": "אתה חוקר שוק מקצועי. תפקידך לבצע מחקרי שוק מעמיקים, לנתח מתחרים, לזהות מגמות שוק, ולהעריך הזדמנויות עסקיות. עליך לספק מידע מדויק ותובנות שימושיות.",
+      "capabilities": ["market_research", "competitor_analysis", "trend_identification", "opportunity_assessment"]
+    }
+  },
+  "default_parameters": {
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "max_tokens": 1000
+  }
+}
+"""
